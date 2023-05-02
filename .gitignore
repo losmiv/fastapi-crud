@@ -1,1 +1,5 @@
 .venv/
+alembic.ini
+__pycache__/
+migrations/
+.env

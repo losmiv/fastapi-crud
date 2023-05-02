@@ -7,8 +7,9 @@ from alembic import context
 
 import asyncio
 from sqlalchemy.engine import Connection
-from sqlalchemy.ext.asynctio import AsyncEngine
+from sqlalchemy.ext.asyncio import AsyncEngine
 from sqlmodel import SQLModel
+from models import *
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
@@ -65,7 +66,7 @@ def do_run_migrations(connectable: Connection):
             context.run_migrations()
 
 
-def run_migrations_online() -> None:
+async def run_migrations_online() -> None:
     """Run migrations in 'online' mode.
 
     In this scenario we need to create an Engine
