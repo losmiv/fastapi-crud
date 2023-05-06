@@ -1,5 +1,6 @@
 ## FastAPI CRUD app
 
+* crud repository (create, get_all, get_by_id, update, delete)
 * pagination
 * sorting
 * filtering
